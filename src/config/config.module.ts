@@ -8,5 +8,6 @@ import { Module } from '@nestjs/common';
             useValue: new ConfigService()
         },
     ],
+    exports:[ConfigService],
 })
 export class ConfigModule {}
